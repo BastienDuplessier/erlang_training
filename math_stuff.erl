@@ -1,0 +1,6 @@
+-module(math_stuff).
+-export([perimeter/1]).
+
+perimeter({square, Side}) -> 4 * Side;
+perimeter({circle, Radius}) -> 2 * 3.14 * Radius;
+perimeter({triangle, A, B, C}) -> A + B + C.
